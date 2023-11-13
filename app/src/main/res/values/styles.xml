@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<!--    Estilo de boton-->
     <style name="AppTheme.BotonCalculadora" parent="TextAppearance.AppCompat.Headline">
         <item name="android:textColor">@color/white</item>
         <item name="android:gravity">center</item>

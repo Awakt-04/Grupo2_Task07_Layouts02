@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         linearLayoutButton = findViewById(R.id.botonL)
         tableLayoutButton = findViewById(R.id.botonT)
         relativeLayoutButton = findViewById(R.id.botonR)
-        // gridLayoutButton = findViewById(R.id.botonG)
+        gridLayoutButton = findViewById(R.id.botonG)
 
         linearLayoutButton.setOnClickListener{
             val intent = Intent(this@MainActivity, LinearLayout::class.java)
@@ -38,10 +38,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        /*gridLayoutButton.setOnClickListener{
+        gridLayoutButton.setOnClickListener{
             val intent = Intent(this@MainActivity, GridLayout::class.java)
             startActivity(intent)
-        }*/
+        }
 
     }
 

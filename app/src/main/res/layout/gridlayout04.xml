@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--    Definición de LinearLayout padre con sus parámetros:
+        - Ancho
+        - Alto
+        - Orientación
+-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
+<!--    Definición de LinearLayout con sus parámetros:
+        - id
+        - Ancho
+        - Alto
+        - Orientación
+-->
 
     <LinearLayout
         android:id="@+id/layout"
@@ -50,10 +62,19 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:contentDescription="@string/ContenidoTresPuntos"
-            android:onClick="showPopupR"
+            android:onClick="showPopupG"
             app:srcCompat="@drawable/tres_puntos" />
 
     </LinearLayout>
+
+<!--    Definición de GridLayout con sus parámetros:
+        - Ancho
+        - Alto
+        - Peso
+        - Tipo de alineado
+        - Número de columnas
+        - Número de filas
+ -->
 
     <GridLayout
         android:layout_width="match_parent"
@@ -62,6 +83,17 @@
         android:alignmentMode="alignBounds"
         android:columnCount="4"
         android:rowCount="4">
+
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
 
         <Button
             android:id="@+id/numero7"
@@ -73,6 +105,17 @@
             android:text="@string/numero7"
             app:backgroundTint="@color/azul" />
 
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
+
         <Button
             android:id="@+id/numero8"
             style="@style/AppTheme.BotonCalculadora"
@@ -82,6 +125,17 @@
             android:layout_column="1"
             android:text="@string/numero8"
             app:backgroundTint="@color/azul" />
+
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
 
         <Button
             android:id="@+id/numero9"
@@ -93,6 +147,17 @@
             android:text="@string/numero9"
             app:backgroundTint="@color/azul" />
 
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
+
         <Button
             android:id="@+id/division"
             style="@style/AppTheme.BotonCalculadora"
@@ -102,6 +167,17 @@
             android:layout_column="3"
             android:text="@string/division"
             app:backgroundTint="@color/rojo" />
+
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
 
         <Button
             android:id="@+id/numero4"
@@ -113,6 +189,17 @@
             android:text="@string/numero4"
             app:backgroundTint="@color/azul" />
 
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
+
         <Button
             android:id="@+id/numero5"
             style="@style/AppTheme.BotonCalculadora"
@@ -122,6 +209,17 @@
             android:layout_column="1"
             android:text="@string/numero5"
             app:backgroundTint="@color/azul" />
+
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
 
         <Button
             android:id="@+id/numero6"
@@ -133,6 +231,17 @@
             android:text="@string/numero6"
             app:backgroundTint="@color/azul" />
 
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
+
         <Button
             android:id="@+id/multiplicacion"
             style="@style/AppTheme.BotonCalculadora"
@@ -142,6 +251,17 @@
             android:layout_column="3"
             android:text="@string/multiplicacion"
             app:backgroundTint="@color/rojo" />
+
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
 
         <Button
             android:id="@+id/numero1"
@@ -153,6 +273,17 @@
             android:text="@string/numero1"
             app:backgroundTint="@color/azul" />
 
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
+
         <Button
             android:id="@+id/numero2"
             style="@style/AppTheme.BotonCalculadora"
@@ -162,6 +293,17 @@
             android:layout_column="1"
             android:text="@string/numero2"
             app:backgroundTint="@color/azul" />
+
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
 
         <Button
             android:id="@+id/numero3"
@@ -173,6 +315,17 @@
             android:text="@string/numero3"
             app:backgroundTint="@color/azul" />
 
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
+
         <Button
             android:id="@+id/resta"
             style="@style/AppTheme.BotonCalculadora"
@@ -182,6 +335,17 @@
             android:layout_column="3"
             android:text="@string/resta"
             app:backgroundTint="@color/rojo" />
+
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
 
         <Button
             android:id="@+id/punto"
@@ -193,6 +357,17 @@
             android:text="@string/punto"
             app:backgroundTint="@color/azul" />
 
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
+
         <Button
             android:id="@+id/numero0"
             style="@style/AppTheme.BotonCalculadora"
@@ -203,6 +378,17 @@
             android:text="@string/numero0"
             app:backgroundTint="@color/azul" />
 
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
+
         <Button
             android:id="@+id/igual"
             style="@style/AppTheme.BotonCalculadora"
@@ -212,6 +398,17 @@
             android:layout_column="2"
             android:text="@string/igual"
             app:backgroundTint="@color/azul" />
+
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Estilo
+        - Ancho
+        - Alto
+        - Fila
+        - Columnas
+        - Texto
+        - Color de fondo
+-->
 
         <Button
             android:id="@+id/suma"
@@ -224,6 +421,13 @@
             app:backgroundTint="@color/rojo" />
 
     </GridLayout>
+
+<!--    Definición de botón con sus parámetros:
+        - id
+        - Ancho
+        - Alto
+        - Texto
+-->
 
     <Button
         android:id="@+id/botonVuelta4"
