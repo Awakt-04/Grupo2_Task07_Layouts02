@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    Definición del RelativeLayout padre con sus parámetros:
+        - Ancho
+        - Alto
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<!--    Definición del LinearLayout con sus parámetros:
+        - id
+        - Ancho
+        - Alto
+        - Orientación
+-->
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+<!--    Definición de Toolbar dentro de LinearLayout (horizontal) con sus parámetros:
+        - id
+        - Ancho
+        - Alto
+        - Peso
+        - Color de fondo
+        - Elevación
+        - Tema
+        - Título
+        - Color de título
+-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Barra"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@color/light_black"
+            android:elevation="4dp"
+            android:theme="?attr/actionBarTheme"
+            app:title="@string/textoBarra"
+            app:titleTextColor="@color/white" />
+
+<!--    Definición de ImageView dentro de LinearLayout (horizontal) con sus parámetros:
+        - id
+        - Ancho
+        - Alto
+        - Peso (tamaño que ocupa en base a tamaño del resto de elementos)
+        - Descripción del contenido
+        - Acción al pulsar
+        - Contenido
+-->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/ContenidoTresPuntos"
+            android:onClick="showPopupR"
+            app:srcCompat="@drawable/tres_puntos" />
+
+    </LinearLayout>
+
+<!--    Definición de EditText con sus parámetros:
+        - id
+        - Ancho
+        - Alto
+        - Posición por debajo (debajo de qué elemento se encuentra)
+        - Si se alinéa con el inicio del padre
+        - Margen del inicio (izquierda)
+        - Tamaño de caracter
+        - Tipo de texto a introducir
+        - Texto
+        - Margen del final (derecha) * tools
+
+-->
+
+    <EditText
+        android:id="@+id/inputNombre"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/layout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:ems="10"
+        android:inputType="text|textPersonName"
+        android:text="@string/inputNombre"
+        tools:layout_marginEnd="25dp" />
+
+<!--    Definición de EditText con sus parámetros:
+        - id
+        - Ancho
+        - Alto
+        - Posición por debajo (debajo de qué elemento se encuentra)
+        - Si se alinéa con el inicio del padre
+        - Margen del inicio (izquierda)
+        - Tamaño de caracter
+        - Tipo de texto a introducir
+        - Texto
+        - Margen del final (derecha) *tools
+
+-->
+
+    <EditText
+        android:id="@+id/inputApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/inputNombre"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:ems="10"
+        android:inputType="text|textPersonName"
+        android:text="@string/inputApellidos"
+        tools:layout_marginEnd="25dp" />
+
+<!--    Definición de TextText con sus parámetros:
+            - id
+            - Ancho
+            - Alto
+            - Posición por debajo (debajo de qué elemento se encuentra)
+            - Si se alinéa con el inicio del padre
+            - Margen del inicio (izquierda)
+            - Margen del final (derecha)
+            - Relleno superior
+            - Relleno inferior
+            - Texto
+            - Formato de texto
+            - Margen del final (derecha) *tools
+
+-->
+
+    <TextView
+        android:id="@+id/estadoCivil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputApellidos"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="50dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:text="@string/estadoCivil"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:layout_marginEnd="25dp" />
+
+<!--    Definición de Spinner con sus parámetros:
+        - id
+        - Ancho
+        - Alto
+        - Posición por debajo (debajo de qué elemento se encuentra)
+        - Si se alinéa con el inicio del padre
+        - Margen del inicio (izquierda)
+        - Apartados que recoje
+        - Margen del final (derecha) *tools
+-->
+
+    <Spinner
+        android:id="@+id/spinnerEC"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/estadoCivil"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_toLeftOf="@id/cargo"
+        android:entries="@array/lista_spinner_ec"
+        tools:layout_marginEnd="25dp" />
+
+<!--    Definición de TextView con sus parámetros:
+        - id
+        - Ancho
+        - Alto
+        - Posición por debajo (debajo de qué elemento se encuentra)
+        - Si se centra horizontalmente
+        - Margen del inicio (izquierda)
+        - Elemento del que se encuentra detrás (derecha)
+        - Relleno superior
+        - Relleno inferior
+        - Texto
+        - Formato del texto
+        - Margen del final (derecha) * tools
+-->
+
+    <TextView
+        android:id="@+id/cargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputApellidos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="25dp"
+        android:layout_toEndOf="@id/estadoCivil"
+        android:paddingTop="16dp"
+        android:paddingBottom="8dp"
+        android:text="@string/cargo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:layout_marginEnd="25dp" />
+
+<!--    Definición de Spinner con sus siguientes parámetros:
+        - id
+        - Ancho
+        - Alto
+        - Elemento del que se encuentra debajo
+        - Elemento del que está alineado por el inicio (izquierda)
+        - Si se extiende hasta el final del padre
+        - Margen del final (derecha)
+        - Apartados que toma
+        - Margen del final (derecha) *tools
+-->
+
+    <Spinner
+        android:id="@+id/spinnerC"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@id/cargo"
+        android:layout_alignStart="@id/cargo"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="52dp"
+        android:entries="@array/lista_spinner_c"
+        tools:layout_marginEnd="25dp" />
+
+    <Button
+        android:id="@+id/botonVuelta3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerC"
+        android:text="@string/botonVuelta" />
+</RelativeLayout>

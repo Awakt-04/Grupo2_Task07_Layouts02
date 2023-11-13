@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Definición de TableLayout padre con sus parámetros:
+    - Ancho
+    - Alto
+    - Orientación
+-->
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/boton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--    Definición de TableRow con sus parámetros:
+        - Ancho
+        - Alto
+        - Color de fondo
+-->
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_black">
+
+        <!--    Definición de LinearLayout con sus parámetros:
+        - id
+        - Ancho
+        - Alto
+        - Peso
+        - Orientación
+-->
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <!--    Definición de Toolbar dentro de LinearLayout (horizontal) con sus parámetros:
+        - id
+        - Ancho
+        - Alto
+        - Peso
+        - Color de fondo
+        - Tema
+        - Título
+        - Color de título
+-->
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/Barra"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_weight="1"
+                android:background="@color/light_black"
+                android:elevation="4dp"
+                android:theme="?attr/actionBarTheme"
+                app:title="@string/textoBarra"
+                app:titleTextColor="@color/white" />
+
+            <!--    Definición de ImageView dentro de LinearLayout (horizontal) con sus parámetros:
+        - id
+        - Ancho
+        - Alto
+        - Peso
+        - Descripción del contenido
+        - Acción al pulsar
+        - Contenido
+-->
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="87dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/ContenidoTresPuntos"
+                android:onClick="showPopupT"
+                app:srcCompat="@drawable/tres_puntos" />
+
+        </LinearLayout>
+
+    </TableRow>
+
+    <!--    Definición de TableLayout con sus parámetros:
+        - Ancho
+        - Alto
+        - Orientación
+        - Relleno
+-->
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!--   Definición de TableRow con sus parámetros:
+        - Ancho
+        - Alto
+        - Color de fondo
+-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/green">
+
+            <!--    Definición de TextView con sus parámetros:
+        - Relleno
+        - Texto
+        - Color de texto
+-->
+
+            <TextView
+                android:padding="5dp"
+                android:text="@string/textView1"
+                android:textColor="@color/white" />
+
+            <!--    Definición de TextView con sus parámetros:
+        - Margen del inicio (izquierda)
+        - Relleno
+        - Texto
+        - color del texto
+-->
+
+            <TextView
+                android:layout_marginStart="70dp"
+                android:padding="5dp"
+                android:text="@string/textView2"
+                android:textColor="@color/white" />
+        </TableRow>
+
+        <!--   Definición de TableRow con sus parámetros:
+        - Ancho
+        - Alto
+-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--    Definición de TextView con sus parámetros:
+        - Relleno
+        - Texto
+        - Color de texto
+-->
+
+            <TextView
+                android:padding="5dp"
+                android:text="@string/textView3"
+                android:textColor="@color/gray" />
+
+            <!--    Definición de TextView con sus parámetros:
+        - Margen del inicio (izquierda)
+        - Relleno
+        - Texto
+        - Color del texto
+-->
+
+            <TextView
+                android:layout_marginStart="70dp"
+                android:padding="5dp"
+                android:text="@string/textView4"
+                android:textColor="@color/gray" />
+        </TableRow>
+
+        <!--   Definición de TableRow con sus parámetros:
+       - Ancho
+       - Alto
+-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--    Definición de TextView con sus parámetros:
+        - Relleno
+        - Texto
+        - Color de texto
+-->
+
+            <TextView
+                android:padding="5dp"
+                android:text="@string/textView5"
+                android:textColor="@color/gray" />
+
+            <!--    Definición de TextView con sus parámetros:
+        - Margen del inicio (izquierda)
+        - Relleno
+        - Texto
+        - Color del texto
+-->
+
+            <TextView
+                android:layout_marginStart="70dp"
+                android:padding="5dp"
+                android:text="@string/textView6"
+                android:textColor="@color/gray" />
+
+        </TableRow>
+
+        <!--    Definición de TableRow con sus parámetros:
+        - Ancho
+        - Alto
+-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--    Definición de TextView con sus parámetros:
+        - Relleno
+        - Texto
+        - Color de texto
+-->
+
+            <TextView
+                android:padding="5dp"
+                android:text="@string/textView7"
+                android:textColor="@color/gray" />
+
+            <!--    Definición de TextView con sus parámetros:
+        - Margen del inicio (izquierda)
+        - Relleno
+        - Texto
+        - Color del texto
+-->
+
+            <TextView
+                android:layout_marginStart="70dp"
+                android:padding="5dp"
+                android:text="@string/textView8"
+                android:textColor="@color/gray" />
+        </TableRow>
+
+        <!--   Definición de TableRow con sus parámetros:
+       - Ancho
+       - Alto
+-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--    Definición de TextView con sus parámetros:
+        - Relleno
+        - Texto
+        - Color de texto
+-->
+
+            <TextView
+                android:padding="5dp"
+                android:text="@string/textView9"
+                android:textColor="@color/gray" />
+
+            <!--    Definición de TextView con sus parámetros:
+        - Margen del inicio (izquierda)
+        - Relleno
+        - Texto
+        - Color del texto
+-->
+
+            <TextView
+                android:layout_marginStart="70dp"
+                android:padding="5dp"
+                android:text="@string/textView10"
+                android:textColor="@color/gray" />
+        </TableRow>
+
+        <!--    Definición de View con sus parámetros:
+        - Altura
+        - Color de fondo
+-->
+        <View
+            android:layout_height="2dp"
+            android:background="@color/light_gray" />
+
+        <!--   Definición de TableRow con sus parámetros:
+       - Ancho
+       - Alto
+-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--    Definición de TextView con sus parámetros:
+        - Margen del inicio (izquierda)
+        - Relleno
+        - Texto
+        - Color del texto
+-->
+
+            <TextView
+                android:layout_marginStart="163dp"
+                android:padding="5dp"
+                android:text="@string/textView2"
+                android:textColor="@color/blue_green" />
+
+            <!--    Definición de TextView con sus parámetros:
+        - Margen del inicio (izquierda)
+        - Relleno
+        - Texto
+        - Color del texto
+-->
+
+            <TextView
+                android:layout_marginStart="70dp"
+                android:padding="5dp"
+                android:text="@string/textView11"
+                android:textColor="@color/gray" />
+
+        </TableRow>
+
+        <!--   Definición de TableRow con sus parámetros:
+       - Ancho
+       - Alto
+-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--    Definición de TextView con sus parámetros:
+        - Margen del inicio (izquierda)
+        - Relleno
+        - Texto
+        - Color del texto
+-->
+
+            <TextView
+                android:layout_marginStart="163dp"
+                android:padding="5dp"
+                android:text="@string/textView12"
+                android:textColor="@color/blue_green" />
+
+            <!--    Definición de TextView con sus parámetros:
+        - Margen del inicio (izquierda)
+        - Relleno
+        - Texto
+        - Color del texto
+-->
+
+            <TextView
+                android:layout_marginStart="70dp"
+                android:padding="5dp"
+                android:text="@string/textView6"
+                android:textColor="@color/gray" />
+        </TableRow>
+
+        <!--   Definición de TableRow con sus parámetros:
+        - Ancho
+        - Alto
+ -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--    Definición de TextView con sus parámetros:
+        - Margen del inicio (izquierda)
+        - Relleno
+        - Texto
+        - Color del texto
+-->
+
+            <TextView
+                android:layout_marginStart="163dp"
+                android:padding="5dp"
+                android:text="@string/textView13"
+                android:textColor="@color/blue_green" />
+
+            <!--    Definición de TextView con sus parámetros:
+        - Margen del inicio (izquierda)
+        - Relleno
+        - Texto
+        - Color del texto
+-->
+
+            <TextView
+                android:layout_marginStart="70dp"
+                android:padding="5dp"
+                android:text="@string/textView14"
+                android:textColor="@color/gray" />
+        </TableRow>
+
+        <!--   Definición de TableRow con sus parámetros:
+       - Ancho
+       - Alto
+-->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--    Definición de TextView con sus parámetros:
+        - Margen del inicio (izquierda)
+        - Relleno
+        - Texto
+        - Color del texto
+-->
+
+            <TextView
+                android:layout_marginStart="163dp"
+                android:padding="5dp"
+                android:text="@string/textView15"
+                android:textColor="@color/blue_green" />
+
+            <!--    Definición de TextView con sus parámetros:
+        - Margen del inicio (izquierda)
+        - Relleno
+        - Texto
+        - Color del texto
+-->
+
+            <TextView
+                android:layout_marginStart="70dp"
+                android:padding="5dp"
+                android:text="@string/textView16"
+                android:textColor="@color/gray" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/botonVuelta2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/botonVuelta" />
+    </TableRow>
+
+</TableLayout>

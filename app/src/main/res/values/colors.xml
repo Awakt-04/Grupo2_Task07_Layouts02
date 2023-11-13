@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    Colores generales -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_black">#232222</color>
+<!--    Color para letra de LinearLayout -->
+    <color name="letraAzul">#0E8AEE</color>
+<!--    Colores para letras de TableLayout -->
+    <color name="green">#10816F</color>
+    <color name="gray">#6E6A6A</color>
+    <color name="light_gray">#9F9A9A</color>
+    <color name="blue_green">#119580</color>
+</resources>

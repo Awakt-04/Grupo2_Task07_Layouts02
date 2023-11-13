@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--    Definición de LinearLayout con sus parámetros:
+            - Ancho
+            - Alto
+            - Orientación
+    -->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--    Definición de Toolbar dentro de LinearLayout (horizontal) con sus parámetros:
+                - id
+                - Ancho
+                - Alto
+                - Peso (tamaño que ocupa en base a tamaño del resto de elementos)
+                - Color de fondo
+                - Elevación
+                - Tema
+                - Título
+                - Color de letra del título
+        -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Barra"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@color/light_black"
+            android:elevation="4dp"
+            android:theme="?attr/actionBarTheme"
+            app:title="@string/textoBarra"
+            app:titleTextColor="@color/white" />
+
+        <!--    Definición de ImageView dentro de LinearLayout (horizontal) con sus parámetros:
+                - id
+                - Ancho
+                - Alto
+                - Peso (tamaño que ocupa en base a tamaño del resto de elementos)
+                - Descripción del contenido
+                - Acción al pulsar
+                - Contenido
+        -->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/ContenidoTresPuntos"
+            android:onClick="showPopupM"
+            app:srcCompat="@drawable/tres_puntos" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginTop="50dp">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/botonL"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/linearLayout"
+                app:backgroundTint="@color/green" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/botonT"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/tableLayout"
+                app:backgroundTint="@color/green" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/botonR"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/relativeLayout"
+                app:backgroundTint="@color/green" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/botonG"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="@string/gridLayout"
+                app:backgroundTint="@color/green" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<resources>
+<!--    Strings generales-->
+    <string name="app_name">Layouts2</string>
+    <string name="textoBarra">Crazy Layouts</string>
+    <string name="ContenidoTresPuntos">Tres Puntos</string>
+    <string name="opcion1">Opción 1</string>
+    <string name="opcion2">Opción 2</string>
+<!--    Strings usadas para LinearLayout-->
+    <string name="textoConectar">Conectar</string>
+    <string name="textoCorreo">Correo</string>
+    <string name="textoContrasena">Contraseña</string>
+    <string name="textoInicioSesion">Iniciar Sesión</string>
+    <string name="textoOlvidoContrasena">¿Olvidaste tu contraseña?</string>
+<!--    String usadas para RelativeLayout-->
+    <string name="inputNombre">Nombres</string>
+    <string name="inputApellidos">Apellidos</string>
+    <string name="estadoCivil">Estado Civil</string>
+    <string name="cargo">Cargo</string>
+    <string-array name="lista_spinner_ec">
+        <item>Soltero</item>
+        <item>Casado</item>
+        <item>Ns/Nc</item>
+    </string-array>
+    <string-array name="lista_spinner_c">
+        <item>Ventas</item>
+        <item>Informática</item>
+        <item>Jardinería</item>
+    </string-array>
+<!--    Strings usadas para TableLayout-->
+    <string name="textView1">Producto</string>
+    <string name="textView2">Subtotal</string>
+    <string name="textView3">Jabón de manos x 1</string>
+    <string name="textView4">$2</string>
+    <string name="textView5">Shampoo Monster x 1</string>
+    <string name="textView6">$10</string>
+    <string name="textView7">Pastas Duria x 2</string>
+    <string name="textView8">$18</string>
+    <string name="textView9">Detergente Limpiadin x 1</string>
+    <string name="textView10">$13,4</string>
+    <string name="textView11">$43,4</string>
+    <string name="textView12">Costo envío</string>
+    <string name="textView13">Cupón</string>
+    <string name="textView14">-$5</string>
+    <string name="textView15">Total</string>
+    <string name="textView16">$48,4</string>
+    <string name="textView17">Crazy Layouts</string>
+    <string name="linearLayout">Linear Layout</string>
+    <string name="tableLayout">Table Layout</string>
+    <string name="relativeLayout">Relative Layout</string>
+    <string name="gridLayout">Grid layout</string>
+    <string name="botonVuelta">Volver al menú</string>
+
+</resources>
