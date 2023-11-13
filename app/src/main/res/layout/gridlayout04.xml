@@ -1,6 +1,233 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-</GridLayout>
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!--    Definición de Toolbar dentro de LinearLayout (horizontal) con sus parámetros:
+        - id
+        - Ancho
+        - Alto
+        - Peso
+        - Color de fondo
+        - Elevación
+        - Tema
+        - Título
+        - Color de título
+-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Barra"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_weight="1"
+            android:background="@color/light_black"
+            android:elevation="4dp"
+            android:theme="?attr/actionBarTheme"
+            app:title="@string/textoBarra"
+            app:titleTextColor="@color/white" />
+
+        <!--    Definición de ImageView dentro de LinearLayout (horizontal) con sus parámetros:
+        - id
+        - Ancho
+        - Alto
+        - Peso (tamaño que ocupa en base a tamaño del resto de elementos)
+        - Descripción del contenido
+        - Acción al pulsar
+        - Contenido
+-->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="87dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="@string/ContenidoTresPuntos"
+            android:onClick="showPopupR"
+            app:srcCompat="@drawable/tres_puntos" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:alignmentMode="alignBounds"
+        android:columnCount="4"
+        android:rowCount="4">
+
+        <Button
+            android:id="@+id/numero7"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="@string/numero7"
+            app:backgroundTint="@color/azul" />
+
+        <Button
+            android:id="@+id/numero8"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:text="@string/numero8"
+            app:backgroundTint="@color/azul" />
+
+        <Button
+            android:id="@+id/numero9"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:text="@string/numero9"
+            app:backgroundTint="@color/azul" />
+
+        <Button
+            android:id="@+id/division"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:text="@string/division"
+            app:backgroundTint="@color/rojo" />
+
+        <Button
+            android:id="@+id/numero4"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="@string/numero4"
+            app:backgroundTint="@color/azul" />
+
+        <Button
+            android:id="@+id/numero5"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="@string/numero5"
+            app:backgroundTint="@color/azul" />
+
+        <Button
+            android:id="@+id/numero6"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:text="@string/numero6"
+            app:backgroundTint="@color/azul" />
+
+        <Button
+            android:id="@+id/multiplicacion"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:text="@string/multiplicacion"
+            app:backgroundTint="@color/rojo" />
+
+        <Button
+            android:id="@+id/numero1"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:text="@string/numero1"
+            app:backgroundTint="@color/azul" />
+
+        <Button
+            android:id="@+id/numero2"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:text="@string/numero2"
+            app:backgroundTint="@color/azul" />
+
+        <Button
+            android:id="@+id/numero3"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:text="@string/numero3"
+            app:backgroundTint="@color/azul" />
+
+        <Button
+            android:id="@+id/resta"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:text="@string/resta"
+            app:backgroundTint="@color/rojo" />
+
+        <Button
+            android:id="@+id/punto"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:text="@string/punto"
+            app:backgroundTint="@color/azul" />
+
+        <Button
+            android:id="@+id/numero0"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:text="@string/numero0"
+            app:backgroundTint="@color/azul" />
+
+        <Button
+            android:id="@+id/igual"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:text="@string/igual"
+            app:backgroundTint="@color/azul" />
+
+        <Button
+            android:id="@+id/suma"
+            style="@style/AppTheme.BotonCalculadora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:text="@string/suma"
+            app:backgroundTint="@color/rojo" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/botonVuelta4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/botonVuelta" />
+</LinearLayout>

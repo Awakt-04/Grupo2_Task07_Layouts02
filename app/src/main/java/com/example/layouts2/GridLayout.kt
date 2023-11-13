@@ -15,7 +15,7 @@ class GridLayout: AppCompatActivity()  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.gridlayout04)
 
-        //botonVuelta = findViewById(R.id.botonVuelta4)
+        botonVuelta = findViewById(R.id.botonVuelta4)
 
         botonVuelta.setOnClickListener {
             val intent = Intent(this@GridLayout, MainActivity::class.java)

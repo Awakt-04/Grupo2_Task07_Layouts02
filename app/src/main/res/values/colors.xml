@@ -12,4 +12,7 @@
     <color name="gray">#6E6A6A</color>
     <color name="light_gray">#9F9A9A</color>
     <color name="blue_green">#119580</color>
+<!--    Colores para botones de GridLayout-->
+    <color name="rojo">#EA4D39</color>
+    <color name="azul">#00537D</color>
 </resources>
