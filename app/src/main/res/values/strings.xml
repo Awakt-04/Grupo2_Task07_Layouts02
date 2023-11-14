@@ -43,7 +43,7 @@
     <string name="textView14">-$5</string>
     <string name="textView15">Total</string>
     <string name="textView16">$48,4</string>
-    <string name="textView17">Crazy Layouts</string>
+<!--    Strings usados en MainActivity-->
     <string name="linearLayout">Linear Layout</string>
     <string name="tableLayout">Table Layout</string>
     <string name="relativeLayout">Relative Layout</string>
